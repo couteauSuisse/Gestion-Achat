@@ -1,0 +1,98 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*
+ * Style tweaks
+ * --------------------------------------------------
+ */
+/*
+ * Style tweaks
+ * --------------------------------------------------
+ */
+html,
+body {
+  overflow-x: hidden; /* Prevent scroll on narrow devices */
+}
+body {
+  padding-top: 70px;
+}
+body {
+    background-image:url("../../images/seamlesspaper6.jpg");
+    background-attachment: scroll;
+    background-size: auto;
+    background-position: 0% 0%;
+    background-repeat: repeat repeat;
+	}
+footer {
+	padding: 12px 0;
+	position: fixed;
+	background: rgba(51,0,100,1.00); /* rgba(97,10,181,1.00) */
+	color: rgba(255,255,255,1.00);
+	height: 50px;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
+address {
+	margin-bottom: 20px;
+	font-style: normal;
+	line-height: 1.42857143;
+	background-color: rgba(45,151,8,0.33);
+	border: thin solid rgba(45,151,8,1.00);
+	padding: 7px;
+	border-radius: 4px;
+}
+p{
+	text-align: justify;
+}
+/*
+ * Off Canvas
+ * --------------------------------------------------
+ */
+ 
+ .jumbotron {
+	background: url("../../images/DSC_0654_1.png") no-repeat;
+	background-size: 100%;
+	color: rgba(255,255,255,1.00);
+	 box-shadow: 0 -1px 0 white inset, 0 1px 8px black inset;
+ }
+@media screen and (max-width: 767px) {
+  .row-offcanvas {
+    position: relative;
+    -webkit-transition: all .25s ease-out;
+         -o-transition: all .25s ease-out;
+            transition: all .25s ease-out;
+  }
+
+  .row-offcanvas-right {
+    right: 0;
+  }
+
+  .row-offcanvas-left {
+    left: 0;
+  }
+
+  .row-offcanvas-right
+  .sidebar-offcanvas {
+    right: -50%; /* 6 columns */
+  }
+
+  .row-offcanvas-left
+  .sidebar-offcanvas {
+    left: -50%; /* 6 columns */
+  }
+
+  .row-offcanvas-right.active {
+    right: 50%; /* 6 columns */
+  }
+
+  .row-offcanvas-left.active {
+    left: 50%; /* 6 columns */
+  }
+
+  .sidebar-offcanvas {
+    position: absolute;
+    top: 0;
+    width: 50%; /* 6 columns */
+  }
+}
